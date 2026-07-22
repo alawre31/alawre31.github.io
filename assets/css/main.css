@@ -8601,3 +8601,13 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+.gallery.style2 {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.gallery.style2 article {
+    flex: 0 0 auto;
+}
