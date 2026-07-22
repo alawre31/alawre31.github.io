@@ -8601,13 +8601,16 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
-.gallery.style2 {
-    display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-}
-
-.gallery.style2 article {
-    flex: 0 0 auto;
+/* Mobile Gallery Scroll Fix */
+@media screen and (max-width: 736px) {
+	.gallery {
+		overflow-x: auto !important;
+		-webkit-overflow-scrolling: touch !important;
+		-ms-overflow-style: -ms-autohiding-scrollbar !important;
+		flex-wrap: nowrap !important;
+	}
+	
+	.gallery > * {
+		flex: 0 0 auto !important;
+	}
 }
